@@ -6,12 +6,11 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 11:50:40 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/03/04 11:51:59 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/03/04 12:16:33 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
 
 int main() {
 	Fixed a;
