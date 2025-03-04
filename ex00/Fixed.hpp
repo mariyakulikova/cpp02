@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 11:37:22 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/03/04 13:51:54 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/03/04 15:46:51 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ private:
 	static const int _fractionalBits = 8;
 public:
 	Fixed();
-	Fixed(const Fixed &fixed);
-	Fixed &operator=(const Fixed &fixed);
+	Fixed(const Fixed &other);
+	Fixed &operator=(const Fixed &other);
 	~Fixed();
 	int getRawBits(void) const;
 	void setRawBits(int const raw);
