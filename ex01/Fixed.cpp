@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 11:38:50 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/03/04 21:50:25 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/03/05 15:51:49 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,13 @@ Fixed::Fixed(const Fixed &fixed)
 	*this = fixed;
 }
 
-Fixed &Fixed::operator=(const Fixed &fixed)
+Fixed &Fixed::operator=(const Fixed &other)
 {
 	cout << "Copy assignment operator called" << endl;
-	_fixedPointValue = fixed.getRawBits();
+	if (this != &other)
+	{
+		this->_fixedPointValue = other._fixedPointValue;
+	}
 	return *this;
 }
 
