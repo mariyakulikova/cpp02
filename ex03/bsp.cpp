@@ -6,16 +6,16 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 11:46:48 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/03/09 11:31:06 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/03/10 15:15:25 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
 
 static Fixed area(Point const a, Point const b, Point const c) {
-	Fixed area = (a.getX().toFloat() * (b.getY().toFloat() - c.getY().toFloat()) +
-					b.getX().toFloat() * (c.getY().toFloat() - a.getY().toFloat()) +
-					c.getX().toFloat() * (a.getY().toFloat() - b.getY().toFloat())) / 2.0f;
+	Fixed area = (a.getX() * (b.getY() - c.getY()) +
+					b.getX() * (c.getY() - a.getY()) +
+					c.getX() * (a.getY() - b.getY())) / 2.0f;
 	if (area < 0)
 	{
 		area = area * -1;
